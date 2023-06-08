@@ -30,7 +30,7 @@ export const TaskItem = ({ task, onCheck, onRemove, onEdit }) => {
 
       <Text style={textStyle}>{task.description}</Text>
       {/* ----------------------------------------------- */}
-      <TouchableOpacity onPress={() => onEdit(task.id)}>
+      <TouchableOpacity style={styles.edit} onPress={() => onEdit(task.id)}>
         <Feather name="edit-3" size={24} color="black" />
       </TouchableOpacity>
       {/* ----------------------------------------------- */}
